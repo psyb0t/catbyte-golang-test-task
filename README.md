@@ -57,3 +57,7 @@ Normally I would've added the services to the docker-compose file by creating im
 Also normally all of the logic code i would've put in a separate `internal` directory whihe `cmd` would be responsible just for handling shutdown signals and running the internal code.
 
 Here's an example of how I usually structure services: https://github.com/psyb0t/telegram-logger
+
+### Subnote
+
+I just realised I used vars instead of constants when defining global strings like this one `var rabbitMQURI = "amqp://user:password@localhost:7001/"`. My bad.
